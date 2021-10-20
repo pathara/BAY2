@@ -1,0 +1,201 @@
+﻿<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="___">
+    <meta name="author" content="__">
+    <meta name="generator" content="___">
+    <title>INDEX</title>
+    
+    <!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/dist/css/style.css" type="text/css" charset="utf-8">    
+         
+        
+  </head>
+  
+   <script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+<body class="d-flex flex-column h-100">
+    
+<!-- Begin page content -->
+<main class="flex-grow-1 bgline" role="main">
+  
+  <div class="container-xl container-lg container-md container-sm container mainBG overflow-hidden d-block pb-0 pb-sm-5">
+	  
+	  <!-- TOP MERCHANT LOGO ROW -->
+	  <div class="headerlogo mainBG px-xl-5 px-lg-4 px-md-3 px-sm-2 px-1"><!--  -->
+	  	 	<img alt="merchant logo" src="assets/images/logos/mer_logo.png">
+	  </div>
+	 
+	  <!-- MAIN PAYMENT BOX -->
+	  <div class="row"> <!--  mx-xl-5  mx-lg-4 mx-md-3 mx-sm-2 mx-1 -->
+	
+	
+	
+	<div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12 col-12"style="height:calc(100vh - 120px)!important;">
+		 
+    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0  ">
+			<form>
+			<div class="summarybox py-2"><!-- w-100 bg-white -->
+				<div class="row justify-content-center">
+					<div class="col-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 text-center " >
+						<img class="img-fluid"alt="payment_successful" src="assets/images/graphics/payment_success.svg" width="190">
+					</div>
+					</div>
+
+				<div class="col-xl-12 text-center">
+				
+										
+					<h3 class="pt-0 pb-3">Payment Successful</h3>
+				</div>
+					
+				<div class="row mx-xl-5 pl-xl-2 mx-lg-5 mx-md-5 mx-sm-5 mx-5">
+				
+				
+								<div class="col-sm-6" ><label for="MerchantName" class="pl-xl-3">Merchant Name</label></div>	
+            					<div class="inputcarddetails col-sm-6 mb-sm-2 mb-2">Merchant 01</div>
+            					
+            					
+            					<div class="col-sm-6" ><label for="amount"class="pl-xl-3">Total Amount</label></div>	
+            					<div class="inputcarddetails col-sm-6 mb-sm-2 mb-2">THB 1,000</div>
+            					
+            				    <div class="col-sm-6" ><label for="datetime"class="pl-xl-3">Transaction Date and Time</label></div>	
+            					<div class="inputcarddetails col-sm-6 mb-sm-2 mb-2">09/04/2021  I  16:00 pm </div>
+            					
+            					<div class="col-sm-6" ><label for="ref1"class="pl-xl-3">Ref 1</label></div>	
+            					<div class="inputcarddetails col-sm-6 mb-sm-2 mb-2">BAYM123456789</div>
+
+            					<div class="col-sm-6" ><label for="ref2"class="pl-xl-3">Ref 2</label></div>	
+            					<div class="inputcarddetails col-sm-6 mb-sm-2 mb-2">BAYM123456789</div>
+
+            					
+            					
+								<div class="col-12 text-center my-xl-3 my-lg-3  my-md-3 my-sm-3 my-3 mb-5">
+								<button class="button-large-primary-yellow" type="submit">Done </button>
+								</div>
+								
+				</div>
+
+				
+				
+      				</div>
+      				
+      				
+				
+				
+				
+					
+          			
+
+         
+          			
+      				
+			</div>
+			</form>
+        			
+	
+			
+		
+				
+
+		</div>
+      		
+      			
+      			
+      		
+      			
+      			</div>
+
+	
+	</div>  
+
+	
+	
+    			
+    			
+  
+  
+  </div>
+  <div class="powered-by-krungsri">
+  		Powered by <strong>KRUNGSRI EASY PAY</strong>
+  </div>
+</main>
+
+	<div include-html="product_details_popup.html"></div>
+    <!-- Jquery -->
+    <script src="assets/dist/js/jquery-3.6.0.min.js" type="text/jscript"></script>
+	<!-- Need for Form -->
+     <script src="assets/dist/js/customized-selectoption.js" type="text/jscript"></script>
+     <script src="assets/dist/js/form-validation.js"></script> 
+     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+     
+     <script type="text/javascript">
+     	$("#shippingaddressbox").hide();
+$("#same-address").click(function() {
+    if($(this).is(":checked")) {
+        $("#shippingaddressbox").hide();
+    } else {
+        $("#shippingaddressbox").show();
+    }
+});
+     
+     </script>
+     
+     
+     <script>
+$(document).ready(function(){
+  $(".show-hide-details").click(function(){
+    $(".second-order-details").toggle(500);
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#Call-product-details-modal").click(function(){
+    $("#product-details-modal").modal();
+  });
+});
+</script>
+ 
+    
+    <script>
+		includeHTML();
+	</script>
+
+	
+  </body>
+</html>

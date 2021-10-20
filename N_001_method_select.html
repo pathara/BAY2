@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html class="h-100" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="___" name="description">
+	<meta content="__" name="author">
+	<meta content="___" name="generator">
+	<title>INDEX</title>
+	
+	<!-- Bootstrap core CSS -->
+	<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
+	
+	<!-- Custom styles -->
+	<link charset="utf-8" href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+	
+</head>
+
+<body class="d-flex flex-column h-100">
+	<!-- Begin page content -->
+	<main class="flex-grow-1 bgline" role="main">
+		<div class="container-xl container-lg container-md container-sm container mainBG overflow-hidden d-block pb-5">
+			<!-- TOP MERCHANT LOGO ROW -->
+			<div class="headerlogo mainBG px-xl-5 px-lg-4 px-md-3 px-sm-2 px-1"><!--  -->
+			<img alt="merchant logo" src="assets/images/logos/mer_logo.png"></div>
+			<!-- MAIN PAYMENT BOX -->
+			<div class="row px-xl-5 px-lg-3 px-md-3 px-sm-2 px-0">
+				<!--  mx-xl-5  mx-lg-4 mx-md-3 mx-sm-2 mx-1 -->
+				<div class="col-xl-3 col-lg-3 col-md-5 col-sm-12"style="/*height:calc(100vh - 120px)!important;*/">
+				
+					<!-- ORDER SUMMARY CARD -->
+					<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0">
+						<div class="ordersumwidht">	<!-- w-100 bg-white -->
+							<div class="col-12 mx-0 borderyellow">
+								<h3>Order Summary</h3>
+							</div>
+							
+							<div class="row  mx-0">
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 subhead">
+										Order Number
+									</div>
+									<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ordernumber">
+										#123456789
+									</div>
+									<div class="borderline">
+									
+									</div>
+								</div>
+								<div class="row mx-0">
+									<div class="col-12 merchantname">
+										Merchant Name
+									</div>
+									
+								</div>
+
+							<!-- HIDDEN DETAILS -->
+							<div class="second-order-details" style="display:none;">
+								
+							
+        				
+								<div class="row mx-0"><!-- mr-xl-2  -->
+								
+									<div class="borderline"></div>
+
+									<!-- Product and Fee detail -->		
+        			<div class="col-12 "><div class="amount-fee-details float-left">Amount</div><div class="amount-fee-value float-right">THB 10,150.00</div></div>
+        			<div class="col-12 "><div class="amount-fee-details float-left">Processing Fee</div><div class="amount-fee-value float-right">THB 140.19</div></div>	
+        			<div class="col-12 "><div class="amount-fee-details float-left">Vat Amount</div><div class="amount-fee-value float-right">THB 9.81</div></div>
+        			<!-- END OF Product and Fee detail --><br>	
+									<div class="col-12 productdetails">
+										
+										* A processing fee may be added to your total fare after you’re entered your card number and click next.									
+										</div>
+										
+										
+									<div class="borderline"></div>
+								</div>
+								<div class="row mx-0 pb-4">	<!-- mr-xl-2  -->
+									<div class="col-12 total text-right">
+										Total Amount
+									</div>
+									<!-- TOTAL AMOUNT HERE -->
+									<div class="col-12 totalamount text-right">
+										THB 10,000.00
+									</div>
+								
+
+									<div class="borderline">
+									
+									</div>
+									<div class="col-12 amount-fee-details">
+										<!-- Notice after select credit card method -->
+										*This fee is collected for online payment through Credit/Debit Card.The fee is non-refundable.
+									</div>
+									<div class="col-12">
+										<div class="hide-button show-hide-details">
+											&nbsp;
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<!-- END ORDER DETAIL - FIRST SWAP -->
+							
+							
+							<!-- START ORDER DETAIL SECOND SWAP -->
+							<div class="second-order-details" style="display:block;">
+								<div class="row mx-0 text-right pb-4">
+									<!-- mr-xl-2  -->
+									<div class="col-12 text-left" role="button">
+										<a class=" more-details show-hide-details">More Details</a>
+									</div>
+									
+									
+
+									<!--  TOTAL AMOUNT HERE --> 
+									<div class="col-12 total text-right mt-4 ">
+										Total Amount
+									</div>
+								 <div class="col-12 totalamount text-right mb-0">
+										THB 10,000.00
+									</div>	
+								</div>
+							</div>
+						</div>
+						<!-- END ORDER DETAIL - SECOND SWAP --><div class="col-12 px-0 mx-0">
+											<a class="cancel"onclick="goBack()">Cancel</a>
+										</div>
+										<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+						<div class="w-100 d-block bottomshadow" style="left: 0px; top: -5px; height: 141px"><img alt="" class="img-fluid" height="" src="assets/images/graphics/bottom_shadow-02.png" width="100%"></div>&nbsp;
+					</div>
+				</div>
+				
+				<div class="col-xl-9 col-lg-9 col-md-7 col-sm-12"style="/*border:1px red solid;"><!-- Payment method select -->
+		 <form class="needs-validation" novalidate>	
+    			<div class="row d-block mx-xl-0 mx-lg-n1 mx-md-n1 mx-sm-0 ">
+			<div class="cardselectbox py-2"><!-- w-100 bg-white -->
+				<div class="col-12 ml-1"><h3>Payment Methods</h3></div>
+					<div class="row mx-1">
+							<div class="col-sm-12 mb-3  col-md-12 col-lg-20percent col-xl d-block">
+            						    <input type="radio" name="paymentmethods" id="creditcards" hidden>
+    									<label class="yellow" for="creditcards">
+    									<div class="row">
+    										<div class="col-xl-12 order-lg-first col-lg-12 col-6">
+    										<img class="m-auto pb-xl-3 methodicon" alt="card"src="assets/images/icons/method_card.png">
+    										</div>
+    										<div class="col-xl-12 order-first order-sm-first  col-lg-12 col-6 text-left text-lg-center">
+    											<span>Cards</span>
+    										</div>
+
+    									</div>	
+    									</label>
+            				</div>
+          					<div class="col-sm-12 mb-3  col-md-12  col-lg-20percent col-xl d-block">
+            							<input type="radio" name="paymentmethods" id="mobilebanking" hidden>
+    									<label class="yellow" for="mobilebanking">
+    									
+    									<div class="row">
+    										<div class="col-xl-12 order-lg-first col-lg-12 col-6">
+    										<img class="m-auto pb-xl-3 methodicon" alt="card"src="assets/images/icons/method_mobile.png">
+    										</div>
+    										<div class="col-xl-12 order-first order-sm-first  col-lg-12 col-6 text-left text-lg-center">
+    											<span class=" text-sm-left text-md-left">Mobile Banking</span>
+    										</div>
+    									</div>	
+    									
+    									</label>
+            				</div>
+            				<div class="col-sm-12 mb-3  col-md-12  col-lg-20percent col-xl d-block">
+            						    <input type="radio" name="paymentmethods" id="internetbanking" hidden>
+    									<label class="yellow" for="internetbanking">
+    									<div class="row">
+    										<div class="col-xl-12 order-lg-first col-lg-12 col-6">
+    										<img class="m-auto pb-xl-3 methodicon" alt="card"src="assets/images/icons/method_internet.png">
+    										</div>
+    										<div class="col-xl-12 order-first order-sm-first  col-lg-12 col-6 text-left text-lg-center">
+    											<span class="">Internet Banking</span>
+    										</div>
+    									</div>	
+    									</label>
+            				</div>
+          					<div class="col-sm-12 mb-3  col-md-12  col-lg-20percent col-xl d-block">
+            							<input type="radio" name="paymentmethods" id="qrcode" hidden>
+    									<label class="yellow" for="qrcode">
+    									<div class="row">
+    										<div class="col-xl-12 order-lg-first col-lg-12 col-6">
+    										<img class="m-auto pb-xl-3 methodicon" alt="card"src="assets/images/icons/method_qr.png">
+    										</div>
+    										<div class="col-xl-12 order-first order-sm-first  col-lg-12 col-6 text-left text-lg-center">
+    											<span class="">QR</span>
+    										</div>
+    									</div>	
+    									</label>
+            				</div>
+            				<div class="col-sm-12 mb-3  col-md-12  col-lg-20percent col-xl d-block">
+            							<input type="radio" name="paymentmethods" id="wallet" hidden>
+    									<label class="yellow" for="wallet">
+    									<div class="row">
+    										<div class="col-xl-12 order-lg-first col-lg-12 col-6">
+    										<img class="m-auto pb-xl-3 methodicon" alt="card"src="assets/images/icons/method_wallet.png">
+    										</div>
+    										<div class="col-xl-12 order-first order-sm-first  col-lg-12 col-6 text-left text-lg-center">
+    											<span class="">Wallet</span>
+    										</div>
+    									</div>
+    									</label>
+            				</div>
+            				
+            				
+
+
+          			</div>
+          			<div class="row mx-xl-1 mx-lg-1 mx-md-1 mx-sm-1 mx-1 mt-4 mb-3">
+      						<div class="col-6"><button class="button-large-secondary-normal float-left" type="submit" >Back</button></div>
+      						<div class="col-6"><button class="button-large-primary-yellow float-right" type="submit">Next  </button></div>
+      								
+      				</div>
+      				
+			</div>
+        			
+		</div>
+      		
+      			</form>
+      			</div>
+			</div>
+		</div>
+		
+	</main>
+	
+	<div class="powered-by-krungsri">
+  		Powered by <strong>KRUNGSRI EASY PAY</strong>
+  </div>
+	
+	<!-- Jquery -->
+	<script src="assets/dist/js/jquery-3.6.0.min.js" type="text/jscript">
+	</script> 
+	
+	<!-- Need for Form -->	 
+	<script src="assets/dist/js/customized-selectoption.js" type="text/jscript">
+	</script> 
+	<script src="assets/dist/js/form-validation.js">
+	</script> 
+	
+	
+	<script type="text/javascript">
+	       $("#shippingaddressbox").hide();
+	$("#same-address").click(function() {
+	   if($(this).is(":checked")) {
+	       $("#shippingaddressbox").hide();
+	   } else {
+	       $("#shippingaddressbox").show();
+	   }
+	});
+	    
+	</script> 
+	<script>
+	$(document).ready(function(){
+	 $(".show-hide-details").click(function(){
+	   $(".second-order-details").toggle(500);
+	 });
+	});
+	</script>
+	
+
+</body>
+</html>
