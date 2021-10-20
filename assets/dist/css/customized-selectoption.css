@@ -1,0 +1,115 @@
+﻿/*STYLE SHEET FOT SELECT DROPDOWN OPTION*/
+/* IMPORTANT: WORK WITH customized-selectoption.js ONLY*/
+
+
+.s-hidden {
+    visibility:hidden;
+    /*padding-right:15px;*/
+}
+.select  {
+	
+}
+
+
+.select { /* DEFAULT SELECT BOX */
+    cursor:pointer;
+    display:block;
+    position:relative;
+    border: 1px solid #E8E8E8!important;
+  	border-radius: 3px;
+  	background-color: #FFFFFF;
+  	height: 44px;
+  	color:#949494;
+	font-family:thongterm!important;
+  	font-size: 1.143;
+  	padding-left: 15px;
+  	-webkit-appearance: none; /*HIDE DEFAULT DOWN ARROW*/
+  	-moz-appearance: none; /*HIDE DEFAULT DOWN ARROW*/
+  	background: url('../../images/icons/br_down.png') no-repeat right; /*INSERTED DOWN ARROW*/
+
+}
+
+.styledSelect {   /*STYLE OF TEXT INSIDE DEFAULT SELECT BOX */
+    position:absolute;
+    top:10px;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:0 15px;
+    font-family:thongterm!important;
+  	font-size: 1.143;
+    font-weight:normal;
+    
+}
+.styledSelect{ /*STYLE for down arrow in case of using only css not images */
+    /*content:"";
+    width:0;
+    height:0;
+    border:5px solid transparent;
+    border-color:red transparent transparent transparent;
+    position:absolute;
+    top:9px;
+    right:6px;*/
+
+}
+
+.styledSelect:active, .styledSelect.active {
+    background-color:#ffffff;
+    color:#222222!important;
+    	
+}
+.select:active, .select.active{
+	color:#222222!important;
+}
+
+.select
+.options {
+    display:none;
+    position:absolute;
+    top:100%;
+    right:0;
+    left:0;
+    z-index:2;
+    margin:0 0;
+    padding:0 0;
+    list-style:none;
+    border:1px solid #e8e8e8;
+    background-color:#FFFFFF!important;
+      border-radius: 3px;
+  	  box-shadow: 1px 2px 4px 0px rgba(35,19,18,0.2)!important;
+  	-webkit-box-shadow: 1px 2px 4px 0px rgbargba(35,19,18,0.2)!important; 
+  	-moz-box-shadow: 1px 2px 4px 0px rgba(35,19,18,0.2)!important;
+ 
+}
+
+.options li:active, .options li.active{
+	color:#5A5A5A!important;
+	background-color:#FFD400!important;
+	
+	}
+
+.options li {
+    padding:6px 15px;
+    margin:0px 0px;
+    height:37px;
+    font-family:thongterm!important;
+  	font-size: 16px;
+    font-weight:normal;
+    z-index:999;
+
+}
+
+.options li:first-child  {   /*HIDE 1st li created in customized-selectoption.js */
+	  display:none!important;
+}
+.options li:nth-child(2)::after { content: url('../../images/icons/br_up.png');
+   display: inline-block;
+  position:absolute;
+	top:0px; right:0px;
+	 }
+
+.options li:hover {
+    background-color:#f3f3f3;
+    color:#949494;
+    height:37px;
+}

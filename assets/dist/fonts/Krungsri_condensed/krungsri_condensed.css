@@ -1,0 +1,47 @@
+﻿@font-face {
+    font-family: 'krungsri_condensed';
+    src: url('Krungsri-Con.eot');
+    src: url('Krungsri-Con.eot?#iefix') format('embedded-opentype'),
+         url('Krungsri-Con.woff') format('woff'),
+         url('Krungsri-Con.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'krungsri_condensed';
+    src: url('Krungsri-Con.eot');
+    src: url('Krungsri-Con.eot?#iefix') format('embedded-opentype'),
+         url('Krungsri-Con.woff') format('woff'),
+         url('Krungsri-Con.ttf') format('truetype');
+    font-weight: normal;
+    font-style:italic;
+
+}
+@font-face {
+    font-family: 'krungsri_condensed';
+    src: url('Krungsri-Con-Bol.eot');
+    src: url('Krungsri-Con-Bol.eot?#iefix') format('embedded-opentype'),
+         url('Krungsri-Con-Bol.woff') format('woff'),
+         url('Krungsri-Con-Bol.ttf') format('truetype');
+    font-weight: bold;
+    font-style:normal;
+
+}
+
+@font-face {
+    font-family: 'krungsri_condensed';
+    src: url('Krungsri-Con-Bol.eot');
+    src: url('Krungsri-Con-Bol.eot?#iefix') format('embedded-opentype'),
+         url('Krungsri-Con-Bol.woff') format('woff'),
+         url('Krungsri-Con-Bol.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+.krungsri_condensed{
+   font-family: 'krungsri_condensed', sans-serif!important;
+}
